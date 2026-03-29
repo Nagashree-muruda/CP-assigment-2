@@ -2,53 +2,87 @@
 <html>
 <head>
     <title>Home - Authentication System</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
+
+<!-- 🔝 Navbar Added -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold">
+            <i class="bi bi-shield-lock"></i> Auth System
+        </a>
+
+        <div>
+            <a href="login.html" class="btn btn-light me-2">Login</a>
+            <a href="register.html" class="btn btn-warning">Register</a>
+        </div>
+    </div>
+</nav>
+
+<center>
          
-        <header>
-            <h1>Welcome to Our Authentication System</h1>
-            <p>A simple HTML Authentication Proof of Concept</p>
-            <hr>
-        </header>
+    <!-- HEADER -->
+    <header class="mt-4">
+        <h1 class="fw-bold">Welcome to Our Authentication System</h1>
+        <p class="text-light">A simple HTML Authentication Proof of Concept</p>
+        <hr class="w-50">
+    </header>
 
-        <nav>
-            <a href="home.html">Home</a> |
-            <a href="login.html">Login</a> |
-            <a href="register.html">Register</a>
-        </nav>
+    <!-- NAVIGATION -->
+    <nav class="mb-3">
+        <a href="home.html" class="btn btn-outline-light btn-sm">Home</a>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+        <a href="register.html" class="btn btn-outline-light btn-sm">Register</a>
+    </nav>
 
-        <hr>
+    <!-- ABOUT SECTION (Card) -->
+    <section class="card p-4 mt-3" style="width: 400px;">
+        <h2><i class="bi bi-info-circle"></i> About This Project</h2>
+        <p>
+            This project demonstrates a basic authentication flow using
+            plain HTML pages with proper redirections.
+        </p>
+        <p>
+            You can register, login, reset your password, and access the dashboard.
+        </p>
+    </section>
 
-        <section>
-            <h2>About This Project</h2>
-            <p>
-                This project demonstrates a basic authentication flow using
-                plain HTML pages with proper redirections.
-            </p>
-            <p>
-                You can register, login, reset your password, and access the dashboard.
-            </p>
-        </section>
+    <!-- GET STARTED SECTION -->
+    <section class="card p-4 mt-3" style="width: 400px;">
+        <h2><i class="bi bi-rocket"></i> Get Started</h2>
 
-        <hr>
+        <p>
+            <a href="login.html" class="btn btn-custom w-100 mb-2">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+            </a>
+        </p>
 
-        <section>
-            <h2>Get Started</h2>
-            <p>
-                <a href="login.html">Login to your account</a>
-            </p>
-            <p>
-                <a href="register.html">Create a new account</a>
-            </p>
-        </section>
+        <p>
+            <a href="register.html" class="btn btn-outline-light w-100">
+                <i class="bi bi-person-plus"></i> Register
+            </a>
+        </p>
+    </section>
 
-        <hr>
+    <!-- FOOTER -->
+    <footer class="mt-4 text-light">
+        <hr class="w-50">
+        <p>&copy; 2026 HTML Authentication POC</p>
+    </footer>
 
-        <footer>
-            <p>&copy; 2026 HTML Authentication POC</p>
-        </footer>
-    </center>
+</center>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

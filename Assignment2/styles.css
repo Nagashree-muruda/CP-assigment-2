@@ -1,0 +1,107 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4f46e5, #9333ea, #06b6d4);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+    min-height: 100vh;
+}
+
+/* Smooth animated gradient */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Card Styling */
+.card {
+    border-radius: 18px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Input Fields */
+input {
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 12px;
+    background: rgba(255,255,255,0.8);
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(79,70,229,0.5);
+}
+
+/* Buttons */
+.btn-custom {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(99,102,241,0.5);
+}
+
+/* Links */
+a {
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #facc15;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Centering */
+.center-box {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form spacing */
+form {
+    padding: 10px;
+}
+
+/* Extra polish */
+label {
+    color: #f1f5f9;
+    font-weight: 500;
+}
+
+/* Navbar (for dashboard) */
+.navbar {
+    background: linear-gradient(135deg, #1e293b, #0f172a) !important;
+}
+
+/* Dashboard text */
+p {
+    color: #e2e8f0;
+}
